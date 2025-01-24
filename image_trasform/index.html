@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Transformation with OpenCV.js</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="loadImage()">Выбрать изображение</button>
+        <button onclick="selectPoints()">Выбрать точки</button>
+        <button onclick="setCorrespondence()">Точки соответствия</button>
+        <button onclick="transformImage()">Трансформировать</button>
+    </div>
+    <canvas id="canvas"></canvas>
+    <div id="points-output"></div>
+    <div id="correspondence-output"></div>
+    <canvas id="canvas_rez"></canvas>
+
+
+    <script async src="https://docs.opencv.org/master/opencv.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+</body>
+</html>
